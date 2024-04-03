@@ -4,6 +4,10 @@ class Person {
   String name;
   int age;
 
+  public Person() {
+    System.out.println("Person are being created.");
+  }
+
   void walk() {
     System.out.println(this.name + " is walking.");
   }
