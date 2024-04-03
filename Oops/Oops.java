@@ -4,8 +4,12 @@ class Person {
   String name;
   int age;
 
+  // static is used so that this variable can be 
+  // accessed without creating an object of that class
+  static int count;
+
   public Person() {
-    System.out.println("Person are being created.");
+    count++;
   }
 
   void walk() {
@@ -31,5 +35,7 @@ public class Oops {
     p1.eat();
     p1.walk();
     p1.walk(10);
+
+    System.out.println(Person.count);
   }
 }
